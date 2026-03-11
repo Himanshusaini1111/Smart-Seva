@@ -1,0 +1,1040 @@
+/* General container settings */
+.container {
+    margin-top: 50px;
+}
+
+/* Style for the booking card */
+.bs {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Service image */
+.bs img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Adjustments for section titles */
+h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Booking details section */
+.booking-details {
+    margin-top: 20px;
+}
+
+.booking-details p {
+    font-size: 1.2rem;
+}
+
+.booking-details .amount-section {
+    margin-top: 20px;
+}
+
+.booking-details .amount-section h1 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.booking-details .amount-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Button for "Book Service" */
+.book-service-btn {
+    width: 25%;
+    background-color: #d3e8ff;
+    /* Light blue */
+    color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.book-service-btn:hover {
+    background-color: #a1c7ff;
+    /* Lighter shade of blue on hover */
+}
+
+/* Contact and WhatsApp buttons */
+.contact-buttons a {
+    background-color: transparent;
+    color: inherit;
+    border: 2px solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-buttons .btn-phone {
+    color: blue;
+    border-color: blue;
+}
+
+.contact-buttons .btn-whatsapp {
+    color: green;
+    border-color: green;
+}
+
+.contact-buttons a:hover {
+    opacity: 0.8;
+}
+
+/* Review and Comments Section */
+.review-comments-section {
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Spacer between sections */
+.hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Custom button for submit */
+button.btn-submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+button.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Adjustments for responsive design */
+@media (max-width: 768px) {
+    .bs img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .booking-details .amount-section h1 {
+        font-size: 1.4rem;
+    }
+
+    .book-service-btn {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .contact-buttons a {
+        font-size: 1.1rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Container for the contact buttons */
+.contact-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+    /* Ensure the buttons take up the full width */
+}
+
+/* Style for phone button */
+.btn-phone,
+.btn-whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    /* Increased padding for larger buttons */
+    border-radius: 50%;
+    font-size: 1.5rem;
+    /* Larger icon size */
+    transition: transform 0.3s ease;
+    /* Smooth transition for hover effect */
+    border: 2px solid transparent;
+    cursor: pointer;
+    width: 60px;
+    /* Set a fixed width */
+    height: 60px;
+    /* Set a fixed height */
+}
+
+/* Icon color and styling */
+.btn-phone {
+    background-color: white;
+    color: blue;
+    border-color: blue;
+}
+
+.btn-whatsapp {
+    background-color: white;
+    color: green;
+    border-color: green;
+}
+
+/* Hover effect for buttons */
+.btn-phone:hover,
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+}
+
+/* Optional: Add some margin to space the buttons out */
+.btn-phone {
+    margin-right: 10px;
+}
+
+.btn-whatsapp {
+    margin-right: 10px;
+}
+
+.contact-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Aligns buttons to the right */
+}
+
+.btn-whatsapp {
+    color: #25d366;
+    /* WhatsApp green color */
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 5px;
+    /* Small margin between WhatsApp and phone button */
+}
+
+.btn-phone {
+    color: #007bff;
+    /* Phone button color */
+    font-size: 18px;
+    /* Adjust size */
+    cursor: pointer;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Modal Styling */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Form Sections */
+.form-section {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    padding: 0 0.5rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Rental Location Styling */
+.rental-location {
+    margin-top: 1rem;
+}
+
+.address-toggle {
+    width: 100%;
+    padding: 0.75rem;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.address-toggle:hover {
+    background: #e9ecef;
+}
+
+.address-fields {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+/* Checkbox Styling */
+.return-trip-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+/* Modal Actions */
+.modal-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 1rem;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+    }
+}
+
+/* Validation Styles */
+.form-group {
+    position: relative;
+}
+
+
+/* Ensure section visibility */
+.personal-info-section {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Fieldset defaults */
+.form-section {
+    border: 1px solid #e0e0e0;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+/* Input styling */
+.form-group input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.description-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.facility-box {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.facility-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.facility-content {
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.bullet {
+    color: #007bff;
+    margin-right: 0.8rem;
+    font-weight: bold;
+}
+
+/* Optional: Add responsive adjustments */
+@media (max-width: 768px) {
+    .facility-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .facility-box {
+        padding: 1rem;
+    }
+}
+
+.date-range-picker {
+    max-width: 600px;
+    margin: 1rem 0;
+}
+
+.date-inputs-container {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.date-input-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.date-display {
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    background: #f5f5f5;
+    border-radius: 4px;
+    min-height: 38px;
+}
+
+.single-date {
+    font-weight: 500;
+    color: #333;
+}
+
+.date-range {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.separator {
+    color: #666;
+    margin: 0 0.25rem;
+}
+
+.days-count {
+    margin-left: 0.5rem;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Show end date input only when dates differ */
+.date-input-group .form-group:nth-child(2) {
+    transition: opacity 0.2s ease;
+}
+
+@media (max-width: 480px) {
+    .date-inputs-container {
+        flex-direction: column;
+    }
+
+    .date-input-group {
+        width: 100%;
+    }
+
+    .form-group {
+        flex: 1;
+    }
+}
+
+/* Calendar styles */
+.react-calendar__tile--unavailable-full {
+    background-color: #ffcccc !important;
+    text-decoration: line-through;
+}
+
+.react-calendar__tile--unavailable-partial {
+    background-color: #fff3cd !important;
+}
+
+/* Time slot styling */
+.btn-slot {
+    margin: 4px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f8f9fa;
+}
+
+.btn-slot.selected {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.time-slots-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.selected-date {
+    background: #4CAF50 !important;
+    color: white !important;
+}
+
+.unavailable-date {
+    background: #ffcccc !important;
+    cursor: not-allowed !important;
+}
+
+.time-slot {
+    transition: all 0.2s;
+    border: 2px solid transparent;
+}
+
+.time-slot.selected {
+    background: #4CAF50;
+    color: white;
+    border-color: #388E3C;
+}
+
+.time-slot.booked {
+    background: #ffcccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+
+.react-calendar__tile--active.selected-date {
+    background: #007bff !important;
+    color: white;
+}
+
+.date-picker-trigger {
+  min-width: 280px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 123, 255, 0.25);
+  border-radius: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: all 0.25s ease;
+}
+
+.date-picker-trigger:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: #0d6efd;
+}
+
+.date-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.date-icon {
+  font-size: 22px;
+}
+
+.date-text small {
+  display: block;
+  color: #6c757d;
+  font-size: 12px;
+}
+
+.date-text strong {
+  font-size: 15px;
+  font-weight: 600;
+  color: #212529;
+}
+
+.date-arrow {
+  font-size: 18px;
+  color: #0d6efd;
+}
+
+/* Bookingscreen.css */
+/* Calendar Styles */
+.react-calendar {
+  width: 100%;
+  border: none;
+  font-family: inherit;
+}
+
+.react-calendar__tile {
+  padding: 15px;
+}
+
+.react-calendar__tile--active {
+  background: #007bff;
+  color: white;
+}
+
+.react-calendar__tile--now {
+  background: #f0f0f0;
+}
+
+.unavailable-date {
+  background-color: #ffcccc !important;
+  color: #999 !important;
+  text-decoration: line-through;
+  cursor: not-allowed !important;
+}
+
+.selected-date {
+  background-color: #007bff !important;
+  color: white !important;
+}
+
+/* Time Slot Styles */
+.time-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.time-slot {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.time-slot:hover {
+  border-color: #007bff;
+  background: #f0f7ff;
+}
+
+.time-slot.selected {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.time-slot.booked {
+  background: #f8f9fa;
+  color: #999;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Styles */
+.form-section {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #007bff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Bill Summary Styles */
+.bill-summary {
+  background: #f8f9fa;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.bill-section {
+  margin-bottom: 20px;
+}
+
+.bill-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.bill-row.total-row {
+  border-top: 2px solid #333;
+  border-bottom: none;
+  margin-top: 10px;
+  padding-top: 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.bill-label {
+  color: #555;
+}
+
+.bill-value {
+  font-weight: 500;
+}
+
+/* Button Styles */
+.btn-primary {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.2s;
+}
+
+.btn-secondary:hover {
+  background: #545b62;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Contact Button Styles */
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-whatsapp:hover {
+  background: #1da851;
+}
+
+.btn-phone {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-phone:hover {
+  background: #0056b3;
+}
+
+/* Calendar Trigger */
+.date-picker-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s;
+}
+
+.date-picker-trigger:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.25);
+}
+
+.date-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.date-icon {
+  font-size: 1.2em;
+}
+
+.date-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-text small {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.date-text strong {
+  font-size: 1em;
+  color: #333;
+  font-weight: 600;
+}
+
+.date-arrow {
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+  
+  .time-slots-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  
+  .date-picker-trigger {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-actions {
+    flex-direction: column;
+  }
+  
+  .modal-actions button {
+    width: 100%;
+  }
+}
+
+
+
+
+.unavailable-date {
+  background-color: #f8d7da !important;
+  color: #721c24 !important;
+  text-decoration: line-through;
+  cursor: not-allowed !important;
+}
+
+.selected-date {
+  background-color: #007bff !important;
+  color: white !important;
+}
+
+.react-calendar__tile--now {
+  background-color: #e6f7ff !important;
+}

@@ -1,0 +1,121 @@
+.service-registration {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.navbar {
+  background-color: #f5f7fa;
+  padding: 15px 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar .brand {
+  color: #607D8B;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.registration-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 90vh;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1 1 250px;
+  background-color: #e3f2fd;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+  background-color: #0288d1;
+  color: white;
+}
+
+/* Main Content */
+.main-content {
+  flex: 3 1 600px;
+  background: #ffffff;
+  padding: 40px 50px;
+}
+
+.main-content h2 {
+  margin-bottom: 25px;
+  color: #0288d1;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #0288d1;
+  box-shadow: 0 0 5px rgba(2, 136, 209, 0.2);
+}
+
+.submit-button {
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0277bd;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .registration-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    order: 2;
+    padding: 5px;
+  }
+}
